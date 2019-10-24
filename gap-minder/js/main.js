@@ -139,26 +139,3 @@ let update = data => {
   /*-----Circles-----*/
   yearLabel.text(year + index);
 };
-
-// let update = data => {
-//   /*-----Circles-----*/
-//   //DATA JOIN
-//   let circles = g.selectAll("circle").data(data);
-//
-//   //EXIT
-//   circles.exit().remove();
-//
-//   //UPDATE
-//   circles.attr("class", "update").attr("fill", "red");
-//
-//   circles
-//     .enter()
-//     .append("circle")
-//     //deconstruct this later;
-//     .attr("r", d => Math.sqrt(area(d.population) / Math.PI))
-//     .attr("cx", d => x(d.income))
-//     .attr("cy", d => y(d.life_exp))
-//     .attr("fill", d => continentColor(d.country));
-//
-//   /*-----Circles-----*/
-// };
